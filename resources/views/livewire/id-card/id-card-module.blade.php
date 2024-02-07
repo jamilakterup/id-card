@@ -17,15 +17,15 @@
                 <div class="container">
                     {{-- {{var_export($frontPageInfo)}} --}}
                     <div class="row">
-                        <div class="col-5">
+                        <div class="col-4">
                             <div class="card card-template">
                                 @if (!is_null($asignTemplate))
                                 <img src="{{$frontImage ? Storage::url($asignTemplate->front_image): Storage::url($asignTemplate->back_image)}}"
-                                    alt="card-img" height="500px" class="card-img">
+                                    alt="card-img" height="400px" class="card-img">
                                 @endif
                                 <div>
                                     <canvas id="myCanvas" width="385px" height="500"
-                                        class="position-absolute top-0 start-0 card-img">
+                                        class="position-absolute border top-0 start-0 card-img">
 
                                     </canvas>
                                 </div>
@@ -45,7 +45,7 @@
                         </div>
 
                         {{-- @livewire('id-card.id-card-preview') --}}
-                        <div class="col-7">
+                        <div class="col-8">
                             <div class="card">
                                 <h4 class="card-title my-4 text-center">Front page info</h4>
                                 {{-- onsubmit="getFormData(this)" --}}

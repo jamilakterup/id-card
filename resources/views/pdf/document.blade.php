@@ -1,19 +1,22 @@
 <div>
     <h1>Hello World</h1>
-
+    {{$img}}
     <table>
         <tr>
-            <td>{{ $foo }}</td>
+            <td>
+                <img src="{{ $img }}" alt="Your Image Alt Text">
+            </td>
+        </tr>
+        <tr>
+            {{-- <td>{{ $foo }}</td> --}}
         </tr>
     </table>
 
-    <html-separator />
+    <hr> <!-- Use <hr> for horizontal rule as a separator -->
 
     <table>
         <tr>
-            <td>{{ $bar }}</td>
+            {{-- <td>{{ $bar }}</td> --}}
         </tr>
     </table>
-
-    <html-separator />
 </div>
